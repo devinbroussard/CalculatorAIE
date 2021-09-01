@@ -127,13 +127,12 @@ namespace AIECalculator
 
                     if ((userInput == "a") || (userInput == "yes"))
                     {
-                        Console.WriteLine("\nOkay!");
-                        Console.ReadKey();
                         endApp = false;
                         validInputRecieved = true;
                     }
                     else if ((userInput == "b") || (userInput == "no"))
                     {
+                        Console.Clear();
                         Console.WriteLine("\nOkay then, have a nice day!");
                         Console.ReadKey();
                         endApp = true;
@@ -141,7 +140,7 @@ namespace AIECalculator
                     }
                     else
                     {
-                        Console.WriteLine("\nPlease enter valid input!");
+                        Console.WriteLine("Please enter valid input!");
                     }
                 }
             }
