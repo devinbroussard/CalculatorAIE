@@ -119,6 +119,7 @@ namespace AIECalculator
                 validInputRecieved = false;
                 while (!validInputRecieved)
                 {
+                    Console.Clear();
                     Console.WriteLine("Would you like to use the calculator again?\n");
                     Console.WriteLine("a - Yes");
                     Console.WriteLine("b - No");
@@ -127,20 +128,22 @@ namespace AIECalculator
 
                     if ((userInput == "a") || (userInput == "yes"))
                     {
+                        Console.Clear();
                         endApp = false;
                         validInputRecieved = true;
                     }
                     else if ((userInput == "b") || (userInput == "no"))
                     {
                         Console.Clear();
-                        Console.WriteLine("\nOkay then, have a nice day!");
+                        Console.WriteLine("Okay then, have a nice day!");
                         Console.ReadKey();
                         endApp = true;
                         validInputRecieved = true;
                     }
                     else
                     {
-                        Console.WriteLine("Please enter valid input!");
+                        Console.WriteLine("\n Please enter valid input!");
+                        Console.ReadKey();
                     }
                 }
             }
